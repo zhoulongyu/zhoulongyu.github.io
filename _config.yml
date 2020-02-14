@@ -12,6 +12,7 @@ github_username:  pesoto
 disqus_baseurl: "https://pesoto.github.io/"
 disqus_shortname: https-pesoto-github-io
 permalink: :title
+google-site-verification: "EBNpnv4GiHJTmePgRajamxrYtJnc6WlqDyWUITDaSMo"
 
 # Build settings
 markdown: kramdown
