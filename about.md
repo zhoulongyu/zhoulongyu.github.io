@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <p>
-  I am working as a Reserach Fellow in <a href="https://istd.sutd.edu.sg/" target="_self"> Information Systems Technology and Design</a>, collaborating to <a href="https://people.sutd.edu.sg/~tonyquek/" target="_self"> Prof. Tony Quek</a> at Singapore University of Technology and Design (SUTD), Singapore.
+  I am working as a Reserach Fellow in <a href="https://istd.sutd.edu.sg/" target="_self"> Information Systems Technology and Design</a>, collaborating to <a href="https://people.sutd.edu.sg/~tonyquek/" target="_self"> Prof. Tony Quek</a>, at Singapore University of Technology and Design (SUTD), Singapore.
   </p><p>
   I have purchased a Ph.D. degree in <a href="https://www.sice.uestc.edu.cn/" target="_self"> School of Information and Communication Engineering</a> at the University of Electronic Science and Techonology of China (UESTC), Chengdu, 
   China, (2019-2023). During my Ph.D. journey, I worked as a visting student in Embedded Systems Group (Supervised by <a href="https://www.st.ewi.tudelft.nl/qing/" target="_self"> Dr. Qing Wang</a>) at Delft University of Technology (TU Delft), Delft, the Netherlands for almost one year (2022-2023). 
