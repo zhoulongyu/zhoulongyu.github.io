@@ -16,7 +16,7 @@ permalink: /about/
   I was a recipient of the best paper award in 20th IEEEConference on Communications and Technology. I also serve/have served as a reviewer for the IEEE Transactions on Mobile Computing, the IEEE Transactions on Vehicular Technology, the IEEE Internet of Things Journal, IEEE Global Communications Conference (Globecom),and the IEEE International Conference on Communications (ICC). 
 <br>
 <br>
-Address: 1.502.05, Wireless Networks and Decision Systems (WNDS) Group, School of Information Systems Technology and Design, Singapore University of Technology and Design, Singapore.
+Address: room number: 1.502.05, Wireless Networks and Decision Systems (WNDS) Group, School of Information Systems Technology and Design, Singapore University of Technology and Design, Singapore.
 <br>
 <br>
 E-mail: zhoulyfuture@outlook.com.
