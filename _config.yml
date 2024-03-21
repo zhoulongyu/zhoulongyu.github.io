@@ -2,10 +2,10 @@
 # Site settings
 title: Longyu Zhou
 name: Longyu Zhou
-subtitle:  Economist
+subtitle:  Longyu Zhou
 email: paul.e.soto@frb.gov
 description: >
-   Economist
+   Longyu Zhou
 baseurl: ""
 url: "https://pesoto.github.io/"
 github_username:  pesoto
