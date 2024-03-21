@@ -123,6 +123,6 @@ html {
   <div class="col-9 col-s-9">
     <video width="400" controls>
       <source src="master/css/memory.mp4" type="video/mp4">
-<p> Travel segments in Europe.</p>
     </video>
+    <p> Travel segments in Europe.</p>
   </div>
