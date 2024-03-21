@@ -121,7 +121,7 @@ html {
 </style>
 <body>
   <div class="col-9 col-s-9">
-    <video width="400" controls>
+    <video controls = "controls" width="400" >
       <source src="memory.mp4" type="video/mp4">
     </video>
     <p> Travel segments in Europe.</p>
