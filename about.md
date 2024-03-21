@@ -85,7 +85,7 @@ html {
 }
 
 .menu ul {
-  list-style-type: none;
+  list-style-type: auto;
   margin: 0;
   padding: 0;
 }
