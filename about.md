@@ -23,13 +23,3 @@ E-mail: zhoulyfuture@outlook.com.
 <br>
 
 
-</style>
-<body>
-  <div>
-    <video controls="controls" width="400" >
-      <source src="master/memory.mp4" type="video/mp4">
-    </video>
-    <p> Travel segments in Europe.</p>
-  </div>
-
-
