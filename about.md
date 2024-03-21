@@ -106,7 +106,7 @@ html {
   background-color: #33b5e5;
   padding: 15px;
   color: #ffffff;
-  text-align: center;
+  text-align: right;
   font-size: 14px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -121,8 +121,10 @@ html {
 </style>
 <body>
   <div class="col-9 col-s-9">
-    <video controls = "controls" width="400" >
+    <video controls="controls" width="400" >
       <source src="memory.mp4" type="video/mp4">
+      <object data="memory.mp4" width="400">
+        <embed src="memory.swf" width="400"> 
     </video>
     <p> Travel segments in Europe.</p>
   </div>
