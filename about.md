@@ -119,14 +119,13 @@ html {
   padding: 15px;
 }
 </style>
-</head>
 <body>
 
 
   <div class="col-6 col-s-9">
-    
     <video width="400" controls>
       <source src="memory.mp4" type="video/mp4">
 <p> Travel segments in Europe.</p>
     </video>
   </div>
+  <\body>
