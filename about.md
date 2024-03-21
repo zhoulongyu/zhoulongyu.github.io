@@ -120,12 +120,9 @@ html {
 }
 </style>
 <body>
-
-
-  <div class="col-6 col-s-9">
+  <div class="col-9 col-s-9">
     <video width="400" controls>
-      <source src="memory.mp4" type="video/mp4">
+      <source src="master/css/memory.mp4" type="video/mp4">
 <p> Travel segments in Europe.</p>
     </video>
   </div>
-  <\body>
