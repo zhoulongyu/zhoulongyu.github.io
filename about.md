@@ -13,7 +13,7 @@ permalink: /about/
   </p><p>
     My research focuses on Digital Twin, 6G applications in UAVs-based mobile scenarios, wireless sensor networks, and deep reinforcement Learning. Details are shown at <a href="https://zhoulongyu.github.io/publications" target="_self">research page</a> and my <a href="https://zhoulongyu.github.io/tutorials" target="_self">tutorials</a>! 
   </p>
-  I was a recipient of the best paper award in 20th IEEEConference on Communications and Technology. I also serve/have served as a reviewer for the IEEE Transactions on Mobile Computing, the IEEE Transactions on Vehicular Technology, the IEEE Internet of Things Journal, IEEE Global Communications Conference (Globecom),and the IEEE International Conference on Communications (ICC). 
+  I was a recipient of the best paper award in 20th IEEEConference on Communications and Technology. I also serve/have served as a reviewer for the IEEE Transactions on Mobile Computing, the IEEE Transactions on Vehicular Technology, the IEEE Internet of Things Journal, IEEE Global Communications Conference (Globecom), and the IEEE International Conference on Communications (ICC). 
 <br>
 <br>
 Address: 1.502.05 (Building 1), Wireless Networks and Decision Systems (WNDS) Group, School of Information Systems Technology and Design, Singapore University of Technology and Design, Singapore.
