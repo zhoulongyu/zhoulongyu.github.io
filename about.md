@@ -114,7 +114,7 @@ html {
 .footer {
   background-color: #0099cc;
   color: #ffffff;
-  text-align: center;
+  text-align: right;
   font-size: 12px;
   padding: 15px;
 }
