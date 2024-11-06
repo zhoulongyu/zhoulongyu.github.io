@@ -20,12 +20,17 @@ background-repeat:no-repeat;
 background-position: 80% 15%;
 }
   li {
-  padding-left: 12px;
-  cursor: pointer;
+  color: #000;
+  transition: .2s all;
+}
+li:hover {
   color: #ff6000;
 }
 li::marker {
-  content: '>';
+  content: '😩';
+}
+li:hover::marker {
+  content: '😁';
 }
 </style>  
   <p style="font-weight: bold;">A warm welcome! </p> 
