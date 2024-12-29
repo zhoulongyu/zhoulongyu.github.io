@@ -102,22 +102,6 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 添加阴影 */
     }
 
-  .news-section .news-item .text::before {
-   counter-increment: news-counter;
-   content: counter(news-counter) ". "; /* 在文本前添加编号 */
-   position: absolute;
-   left: -30px; /* 调整编号的位置 */
-   color: #f4a261; /* 编号颜色 */
-   font-weight: bold; /* 加粗编号 */
-}
-
-.news-section {
-   counter-reset: news-counter; /* 初始化编号 */
-}
-
-
-
-
     .news-section h2 {
       font-size: 1.8rem;
       color: #f4a261; /* 突出标题颜色 */
@@ -126,18 +110,35 @@
 
     .news-section .news-item {
       margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
     }
 
     .news-section .news-item .year {
-      font-size: 1.5rem; /* 增大字体 */
-  font-weight: bold; /* 加粗字体 */
-  color: #a8dadc;
-  flex: 0 0 60px;
+      font-size: 1.2rem; /* 增大字体 */
+      font-weight: bold; /* 加粗字体 */
+      color: #a8dadc;
+      flex: 0 0 60px;
     }
 
     .news-section .news-item .text {
       font-size: 1rem;
       color: #f1faee;
+      flex: 1;
+      position: relative;
+    }
+
+    .news-section .news-item .text::before {
+      counter-increment: news-counter;
+      content: counter(news-counter) ". "; /* 在文本前添加编号 */
+      position: absolute;
+      left: -30px;
+      color: #f4a261;
+      font-weight: bold;
+    }
+
+    .news-section {
+      counter-reset: news-counter; /* 初始化编号 */
     }
 
     /* 页脚样式 */
