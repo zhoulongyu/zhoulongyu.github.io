@@ -103,10 +103,13 @@
     }
 
     .news-section .news-item::before {
-  content: '\2192'; /* 箭头符号 */
-  margin-right: 10px;
-  color: #f4a261;
-}
+      counter-increment: news-counter;
+      content: counter(news-counter) ". "; /* 为每个新闻项添加编号 */
+      margin-right: 10px;
+      color: #f4a261;
+      font-weight: bold;
+    }
+
 
 
     .news-section h2 {
