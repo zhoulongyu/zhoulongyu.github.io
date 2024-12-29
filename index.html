@@ -7,22 +7,16 @@
   <style>
     /* 通用样式 */
    body {
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-     width: 100%;
-    max-width: 1200px; /* 或者根据需要设定的宽度 */
     font-family: 'Arial', sans-serif;
-    padding: 0;
-    max-width: 1200px; /* 与 header 对齐的宽度 */
-    background: linear-gradient(to bottom, #1d3557, #457b9d);
-    color: #f1faee;
-    text-align: center;
-     display: center;
-  flex-direction: column;
-  align-items: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh; /* 确保页面内容居中 */
+      background: linear-gradient(to bottom, #1d3557, #457b9d); /* 深蓝到浅蓝渐变背景 */
+      color: #f1faee; /* 浅色字体 */
 }
 
 
@@ -40,23 +34,22 @@
     /* 主内容容器 */
     .main-content {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      flex-wrap: wrap;
-      margin: 40px auto;
-      padding: 20px;
-      max-width: 1200px;
-      gap: 40px;
+      justify-content: flex-start;
+      margin: 20px 0;
+      width: 100%;
     }
 
     /* 个人简介样式 */
     .about-me {
-      flex: 1;
-      text-align: center;
+      text-align: left;
       background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
       padding: 20px;
       border-radius: 15px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+      width: 80%;
+      max-width: 800px;
     }
 
     .about-me h2 {
@@ -110,7 +103,8 @@
       text-align: left;
       margin: 40px auto;
       padding: 20px;
-      max-width: 1200px;
+      width: 80%;
+      max-width: 800px;
       background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
       border-radius: 15px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 添加阴影 */
