@@ -112,33 +112,40 @@
       margin-bottom: 20px;
       display: flex;
       align-items: flex-start;
+      flex-direction: column;
     }
 
     .news-section .news-item .year {
       font-size: 1.2rem; /* 增大字体 */
       font-weight: bold; /* 加粗字体 */
       color: #a8dadc;
-      flex: 0 0 60px;
+      margin-bottom: 10px;
+    }
+
+    .news-section .news-item ul {
+      list-style: none;
+      padding: 0;
+      counter-reset: item-counter; /* 每年重新初始化编号 */
+    }
+
+    .news-section .news-item ul li {
+      counter-increment: item-counter;
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .news-section .news-item ul li::before {
+      content: counter(item-counter) ". "; /* 编号 */
+      position: absolute;
+      left: 0;
+      color: #f4a261;
+      font-weight: bold;
     }
 
     .news-section .news-item .text {
       font-size: 1rem;
       color: #f1faee;
-      flex: 1;
-      position: relative;
-    }
-
-    .news-section .news-item .text::before {
-      counter-increment: news-counter;
-      content: counter(news-counter) ". "; /* 在文本前添加编号 */
-      position: absolute;
-      left: -30px;
-      color: #f4a261;
-      font-weight: bold;
-    }
-
-    .news-section {
-      counter-reset: news-counter; /* 初始化编号 */
     }
 
     /* 页脚样式 */
