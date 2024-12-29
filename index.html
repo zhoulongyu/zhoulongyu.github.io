@@ -28,8 +28,7 @@
     /* 主内容容器 */
     .main-content {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       flex-wrap: wrap;
       margin: 40px auto;
       padding: 20px;
@@ -60,12 +59,13 @@
 
     /* 照片容器 */
     .photo-container {
-      flex: 0 0 150px; /* 固定照片宽度 */
+      flex: 0 0 auto; /* 照片宽度调整 */
+      margin-right: 20px;
     }
 
     .photo-container img {
-      width: 100%;
-      height: auto;
+      width: 120px;
+      height: 120px;
       border-radius: 50%; /* 圆形效果 */
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 照片阴影 */
     }
