@@ -115,7 +115,7 @@ li:hover::marker {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page View Counter</title>
+  <title>Page View Counter with Chart</title>
   <style>
     /* 计数器容器样式 */
     #page-view-container {
@@ -144,6 +144,17 @@ li:hover::marker {
       color: #ffffff; /* 白色文字 */
       margin-bottom: 10px;
     }
+
+    /* 图表容器 */
+    #chart-container {
+      margin: 20px auto;
+      width: 80%; /* 图表宽度 */
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+      border-radius: 10px; /* 圆角 */
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+    }
   </style>
 </head>
 <body>
@@ -153,9 +164,15 @@ li:hover::marker {
       <p id="page-view-title">Total Page Views</p>
       <p id="page-view-count">0</p>
     </div>
+
+    <!-- 图表区域 -->
+    <div id="chart-container">
+      <canvas id="page-view-chart"></canvas>
+    </div>
   </main>
 
-  <!-- JavaScript -->
+  <!-- 引入 Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
     // 获取 LocalStorage 中的计数值
     let pageViews = localStorage.getItem('pageViews') || 0;
@@ -168,6 +185,68 @@ li:hover::marker {
 
     // 在页面上显示计数值
     document.getElementById('page-view-count').innerText = `${pageViews}`;
+
+    // 模拟访问历史记录
+    let visitHistory = JSON.parse(localStorage.getItem('visitHistory')) || [];
+    visitHistory.push({ day: `Day ${visitHistory.length + 1}`, views: pageViews });
+    localStorage.setItem('visitHistory', JSON.stringify(visitHistory));
+
+    // 获取图表数据
+    const labels = visitHistory.map(entry => entry.day);
+    const data = visitHistory.map(entry => entry.views);
+
+    // 初始化 Chart.js 图表
+    const ctx = document.getElementById('page-view-chart').getContext('2d');
+
+    // 创建渐变填充颜色
+    const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+    gradient.addColorStop(0, 'rgba(255, 99, 132, 0.8)');
+    gradient.addColorStop(1, 'rgba(54, 162, 235, 0.8)');
+
+    const chart = new Chart(ctx, {
+      type: 'line', // 折线图
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Page Views Over Time',
+          data: data,
+          backgroundColor: gradient, // 渐变背景
+          borderColor: 'rgba(255, 255, 255, 0.8)', // 白色边框
+          borderWidth: 2,
+          fill: true, // 填充颜色
+          tension: 0.4, // 平滑曲线
+        }],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true,
+            labels: {
+              color: '#ffffff', // 图例文字颜色
+            },
+          },
+        },
+        scales: {
+          x: {
+            ticks: {
+              color: '#ffffff', // X轴文字颜色
+            },
+            grid: {
+              color: 'rgba(255, 255, 255, 0.2)', // X轴网格颜色
+            },
+          },
+          y: {
+            ticks: {
+              color: '#ffffff', // Y轴文字颜色
+            },
+            grid: {
+              color: 'rgba(255, 255, 255, 0.2)', // Y轴网格颜色
+            },
+          },
+        },
+      },
+    });
   </script>
 </body>
 </html>
