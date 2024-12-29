@@ -116,11 +116,58 @@ li:hover::marker {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Page View Counter</title>
+  <style>
+    /* 页面整体背景 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #4facfe, #00f2fe); /* 渐变背景 */
+      color: #ffffff; /* 白色文字 */
+      text-align: center;
+    }
+
+    /* 页面标题和内容样式 */
+    header {
+      padding: 50px 20px;
+      background: rgba(0, 0, 0, 0.4); /* 半透明黑色背景 */
+      border-bottom: 2px solid #ffffff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0 0;
+    }
+
+    /* 计数器容器 */
+    #page-view-container {
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1); /* 半透明白色背景 */
+      border-radius: 10px; /* 圆角边框 */
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+    }
+
+    /* 计数器文字 */
+    #page-view-count {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* 添加文字阴影 */
+    }
+  </style>
 </head>
 <body>
 
   <!-- 计数器显示区域 -->
-  <div id="page-view-container" style="text-align: center; margin-top: 20px;">
+  <div id="page-view-container">
     <p id="page-view-count">Page views: 0</p>
   </div>
 
@@ -140,6 +187,7 @@ li:hover::marker {
   </script>
 </body>
 </html>
+
 
 
 
