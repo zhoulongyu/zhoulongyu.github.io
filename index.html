@@ -93,9 +93,6 @@
 
     /* News 样式 */
     .news-section {
-      content: '\2192'; /* 箭头符号 */
-      margin-right: 10px;
-      color: #f4a261;
       text-align: left;
       margin: 40px auto;
       padding: 20px;
@@ -104,6 +101,13 @@
       border-radius: 15px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 添加阴影 */
     }
+
+    .news-section .news-item::before {
+  content: '\2192'; /* 箭头符号 */
+  margin-right: 10px;
+  color: #f4a261;
+}
+
 
     .news-section h2 {
       font-size: 1.8rem;
