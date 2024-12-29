@@ -102,13 +102,19 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 添加阴影 */
     }
 
-    .news-section .news-item::before {
-      counter-increment: news-counter;
-      content: counter(news-counter) ". "; /* 为每个新闻项添加编号 */
-      margin-right: 10px;
-      color: #f4a261;
-      font-weight: bold;
-    }
+  .news-section .news-item .text::before {
+   counter-increment: news-counter;
+   content: counter(news-counter) ". "; /* 在文本前添加编号 */
+   position: absolute;
+   left: -30px; /* 调整编号的位置 */
+   color: #f4a261; /* 编号颜色 */
+   font-weight: bold; /* 加粗编号 */
+}
+
+.news-section {
+   counter-reset: news-counter; /* 初始化编号 */
+}
+
 
 
 
