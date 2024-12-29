@@ -34,12 +34,10 @@
     /* 主内容容器 */
     .main-content {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      margin: 20px 0;
-      width: 80%;
-      max-width: 800px;
+  flex-direction: row; /* 横向排列 */
+  align-items: flex-start; /* 顶部对齐 */
+  justify-content: space-between; /* 子项均匀分布 */
+  gap: 20px; /* 子项之间的间距 */
     }
 
     /* 个人简介样式 */
@@ -168,16 +166,15 @@
 
     /* 响应式布局 */
     @media (max-width: 768px) {
-      .main-content {
-        flex-direction: column;
-        align-items: center;
-      }
+  .main-content {
+    flex-direction: column; /* 改为纵向排列 */
+    align-items: center;
+  }
 
-      .about-me, .photo-container {
-        width: 90%;
-        margin-bottom: 20px;
-      }
-    }
+  .about-me, .photo-container {
+    width: 100%; /* 调整宽度 */
+  }
+}
   </style>
 </head>
 <body>
