@@ -7,7 +7,7 @@
   <style>
     /* 通用样式 */
    body {
-    font-family: 'Arial', sans-serif;
+     font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
       display: flex;
@@ -33,12 +33,14 @@
 
     /* 主内容容器 */
     .main-content {
+      .main-content {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
       margin: 20px 0;
-      width: 100%;
+      width: 80%;
+      max-width: 1200px;
     }
 
     /* 个人简介样式 */
@@ -65,8 +67,9 @@
 
     /* 照片容器 */
     .photo-container {
-      flex: 0 0 auto; /* 照片宽度调整 */
+      text-align: center;
       margin-right: 20px;
+      width: 30%;
     }
 
     .photo-container img {
@@ -74,6 +77,7 @@
       height: 120px;
       border-radius: 50%; /* 圆形效果 */
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 照片阴影 */
+      margin-bottom: 20px;
     }
 
     /* 个人信息列表 */
@@ -171,7 +175,8 @@
         align-items: center;
       }
 
-      .photo-container {
+      .about-me, .photo-container {
+        width: 90%;
         margin-bottom: 20px;
       }
     }
