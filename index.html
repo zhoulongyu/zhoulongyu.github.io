@@ -17,6 +17,37 @@ layout: page
   gtag('js', new Date());
   gtag('config', 'G-9Q3N4YL1DQ');
 </script>
+  
+<div id="page-view-container" style="text-align: center; margin-top: 20px;">
+  <p id="page-view-count">Loading page views...</p>
+</div>
+<script>
+  async function fetchPageViews() {
+    const token = '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'; // 替换为你的 GitHub Token
+    const owner = 'zhoulongyu';       // GitHub 用户名
+    const repo = 'zhoulongyu.github.io'; // 仓库名称
+
+    try {
+      const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/traffic/views`, {
+        headers: {
+          Authorization: `token ${token}`
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      document.getElementById('page-view-count').innerText = `Total Views: ${data.count}, Unique Visitors: ${data.uniques}`;
+    } catch (error) {
+      console.error('Failed to fetch page views:', error);
+      document.getElementById('page-view-count').innerText = 'Unable to load page views.';
+    }
+  }
+
+  fetchPageViews();
+</script>
 
   
 <style> 
