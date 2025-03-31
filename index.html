@@ -67,13 +67,47 @@
             font-size: 0.9em;
             color: #777;
         }
-    </style>
-    <style>
         .highlight {
             font-size: 18px;
             color: red; /* 红色文字 */
             font-weight: bold; /* 加粗 */
         }
+        .image-container {
+            margin-bottom: 20px; /* 图片与描述之间的间距 */
+        }
+
+        .image-container img {
+            width: 400px; /* 图片宽度 */
+            height: auto; /* 图片自适应高度 */
+        }
+        /* News Section - Fixed Height with Scroll */
+.news-container {
+    max-height: 400px; /* 设置最大高度 */
+    overflow-y: auto; /* 超出部分显示滚动条 */
+    transition: max-height 0.3s ease; /* 添加过渡动画 */
+}
+
+/* 隐藏或显示 News 内容 */
+.news-container.collapsed {
+    max-height: 10;
+    overflow: hidden;
+}
+
+.toggle-button {
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.toggle-button:hover {
+    background-color: #0352b2;
+}
+
+
     </style>
 </head>
 <body>
@@ -91,6 +125,10 @@
                 </ul>
             </div>
         </div>
+        <div class="news-container collapsed" id="newsContainer">
+    <!-- News items here -->
+</div>
+<button class="toggle-button" onclick="toggleNews()">Show More</button>
 
         <div class="about-me">
             <h2>About Me</h2>
@@ -123,7 +161,8 @@
                  </div>
             <div class="news-item">
                 <div class="year">2025</div>
-                 <br><br>    <div class="text"> 03/2025: Our paper, <a href="https://ieeexplore.ieee.org/abstract/document/10944292">GenAI for MTT</a>, has been accepted to IEEE Vehicular Technology Magazine.</div>
+                 <br><br>
+               <div class="text"> 03/2025: Our paper, <a href="https://ieeexplore.ieee.org/abstract/document/10944292">GenAI for MTT</a>, has been accepted to IEEE Vehicular Technology Magazine.</div>
                <br><br>    <div class="text"> 02/2025: Invited to serve the <a href="https://wfiot2025.iot.ieee.org/">IEEE WF-IoT 2025</a>, Digital Twin and IoT application workshop as a TPC member.</div>
             </div>
 
@@ -185,5 +224,19 @@
             &copy; 2024 Longyu Zhou. All Rights Reserved.
         </footer>
     </div>
+<script>
+        function toggleNews() {
+            var newsContainer = document.getElementById('newsContainer');
+            newsContainer.classList.toggle('collapsed'); // Toggle visibility
+            var button = document.querySelector('.toggle-button');
+            if (newsContainer.classList.contains('collapsed')) {
+                button.textContent = 'Show More';
+            } else {
+                button.textContent = 'Show Less';
+            }
+        }
+    </script>
+
+    
 </body>
 </html>
