@@ -106,11 +106,56 @@
 .toggle-button:hover {
     background-color: #0352b2;
 }
+    footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+}
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
 
+.social-link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.social-link:hover {
+    color: #0366d6;
+}
     </style>
 </head>
 <body>
+    <footer>
+    <div class="social-links">
+        <a href="https://scholar.google.com/citations?user=Mj6-DqQAAAAJ&hl=en&oi=ao" target="_blank" class="social-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Google_Scholar_logo.svg" alt="Google Scholar">
+            Google Scholar
+        </a>
+        <a href="https://github.com/zhoulongyu" target="_blank" class="social-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+            GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/longyu-zhou-054a6a247/" target="_blank" class="social-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2013.svg" alt="LinkedIn">
+            LinkedIn
+        </a>
+    </div>
+</footer>
+
     <div class="container">
         <div class="photo-container">
             <img src="zly.png" alt="Your Photo">
